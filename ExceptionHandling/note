@@ -1,0 +1,109 @@
+Exception : It is a disruptive event that occurs during thee execution of a program and interrupting its normal flow.Its an instance of problem that occurs while the program is running such as arithmetic errors ,null pointer access, or resource overflow.
+
+Try-Catch Block:- When an exception occurs in the try block ,the control is transferred to the catch block ,where the exception is handles.
+
+Syntax: try {
+       // block of code
+       }
+       catch(ExceptionType  reference){
+       //catch block
+       }
+       catch(ExceptionType  reference){
+              //catch block
+              }
+
+
+// Finally keyword :- Finally keyword are executed after the try-catch block ,it is used mainly for cleanup operation.
+                   :- It always run either the exception are handled by try-catch block or not.
+                   :- Ideal for closing resources like file or database connection to prevent resource leaks.
+                   Syntax: try {
+                          // block of code
+                          }
+                          catch(ExceptionType  reference){
+                          //catch block
+                          }
+                          finally{
+                          // System.out.print("Finally")
+                          }
+
+Note: { Exception exceptionReference }  is the parent of all type of exception. If we write only Exception then all type are exception are       handled.
+Syntax:
+       try {
+       // block of code
+       }
+       catch(Exception  reference){
+       //catch block
+       }
+
+Note: Catch block always follows the the try block. and we write multiple catch block according to the exception.
+
+
+Types of Exception:=>
+1. User-Defined Exception : It is custom exception that extends either Exception or RuntimeException.zThey are created to represent specific error condition relevant to an application.
+
+
+2. Build-In Exception, and they have also two types:-
+  A------> Checked Exception=> These are exception must be either caught or declared in the method.It is compulsory to handled.
+  B------> Unchecked Exception=> These are exception that do not need to be explicitly handled. It is not compulsory to handle.
+
+ Throw and Throws Keyword:
+
+ Throws Keyword:- Throws keyword is used only to declare an exception . Aur ye method ke turant bad define hota hai.
+ Throw Keyword:- It is used to handle or thrown an  the exception. It is used inside the method body.
+
+  exp: public void teach() throws ExceptionType Name
+      {
+        if(name.contains("-")){
+      throw new ExceptionType Name();
+      }
+  }
+
+  Note: If exception occurred in any method and if they are not handled on that block then the exception goes to their parent or goes from where they call
+  ex: method A(){
+      B(); //calling of method B
+      }
+     method B(){
+     //if B throw an exception and that are not handled on method B then they will goes to the Method A because from method A,B is called.
+      }
+
+  example:
+           import java.util.Scanner;
+
+           public class flowOfException {
+               public static void main(String[] args) {
+                   a();
+               }
+               private static void a(){
+                   b();
+               }
+               private static void b(){
+                   c();
+               }
+               private static void c(){
+                   d();
+               }
+               private static void d(){
+
+                   Scanner input = new Scanner(System.in);
+
+                   System.out.println("Welcome to Calculator World...");
+
+                   System.out.print("Please enter your first number:");
+                   int a = input.nextInt();
+
+                   System.out.print("Please enter your second number:");
+                   int b = input.nextInt();
+
+                   try {
+                       int division = a / b;
+                       System.out.print("Your division of two number are: " + division);
+                   }
+                   catch(Throwable throwable){
+                       System.out.println("General exception");
+                       throw throwable;
+                   }
+               }
+           }
+
+
+

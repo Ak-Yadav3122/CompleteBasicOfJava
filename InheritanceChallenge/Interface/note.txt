@@ -1,0 +1,6 @@
+Q. Is java allow multiple inheritance
+Ans => java does not allow multiple inheritance, but it allows implementation of multiple interfaces Means Multiple class can not inherit in java but multiple inheritance can be done.
+Multiple Inheritance ke liye alag alag interfaces bana sakte hai and sari interfaces of ek he class implement kar sakti hai.
+
+InheritanceChallenge.Interface method are inherently public and abstract except for default and static methods.
+Implement keyword are use by child class for inherit the property of prent class.

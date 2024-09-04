@@ -1,0 +1,28 @@
+Inheritance means inherit the properties and methods of parent class by the children by using IS-A-Relationship and Has-A-Relationship.
+
+ If there is IS-A-Relationship then use inheritance
+ and if there is Has-A-Relationship then we create their object and use it
+
+ Protected Access modifire is odten used in inheritance to allow subclass access to superclass memeber.
+
+ subclass = new class or children
+ superclass  = existing class or parent class
+
+ By using extends keyword we inherit the properties of parent class in children class.
+ 
+ ex: public class TwoWeeler extends Vechile {
+
+    TwoWeeler(int noOfTires) {
+        this.noOfTires = noOfTires;
+    }
+    
+}
+
+
+children ka object banane ke liye parent ka default constructor apne aap call hota hai so hame haesa ek default constructor banana hai parent class me.
+
+TYPES OF INHERITANCE:-
+1.Simple Inheritance {ParentClass <----- childClass}
+2.Multi-level Inheritance{ParentClass<-----childClass1<--------childClass2}
+3.Multiple Inheritance {parentClass1 and parentClass2 <-------childclass} due to dimond shape problem multiple Inheritance are not supported in Java.
+4.Hierarchical Inheritance{ parentClass <--------childclass-1,childclass-2}

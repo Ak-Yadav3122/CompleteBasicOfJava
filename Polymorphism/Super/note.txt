@@ -1,0 +1,14 @@
+
+SUPER KEYWORD :=
+
+Super() can be used to refer immediate parent class instance variable.
+It is used to invoke immediate parent class method by using super.
+It is also used to invoke immediate parent class constructor by using super().
+It is not mandatory to write the super keyword but when there is same method or constructor name which you want to access then to avoid the conflict of naming we use super keyword.
+
+
+THIS KEYWORD:=
+
+It is used to call the method and constructor  or access the properties in same class.
+for method and constructor call we used = this()
+For access the properties of the class we used: this.propertiesName

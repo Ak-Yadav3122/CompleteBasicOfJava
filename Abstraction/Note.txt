@@ -1,0 +1,19 @@
+Abstraction :=>
+
+In abstraction, we use abstract keyword.
+
+By using abstract keyword we declared Abstract Class and Abstract methods
+Abstract Class =>If we create the class by using abstract keyword then we can not create their object, We have to inherit the property of that class by using extends keyword.
+
+Abstract Method => Define methods without implementation, requiring subclass or child class to provide specific functionality. It's Means parent class only define the methods without implementation with the help of abstract keyword, his child class define their functionality.
+ex:  public abstract void makeSound(); <---- only this defined by parent class
+
+     then we have an error i.e; Class 'child class' must either be declared abstract or implement abstract method 'makeSound()' which are defied by parent class.
+     So implementation of abstract method i.e;
+     @Override
+      public void makeSound() {
+      // block of make sound
+      }
+      }
+
+      NOTE = Sub classes or child class must implement all abstract methods of an abstract class.

@@ -1,0 +1,5 @@
+Final Variable = If we use final keyword with the variable then variable become a constant means its value can not be change once initialized.
+
+Final Method = A final method can not be overridden by child class.
+
+Final Class = A final class cannot be child classes, its used to secure the class from being extended.

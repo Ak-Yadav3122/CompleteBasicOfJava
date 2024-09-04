@@ -1,0 +1,18 @@
+Polymorphism => It allows different objects to respond to the same message or method call in multiple ways
+There are two type in polymorphism;
+1.Runtime polymorphism == Its means the behaviour of class are decided on run time
+ --- Method Overriding
+2.Compile-time polymorphism  == Its means we identify the behaviour of code at the compile time then we say there is compile time polymorphism in compile time JVM convert  the .java file  into .class file i.e; byte code
+ ---method overloading and operator overloading.
+
+
+
+ // REFERENCES AND OBJECTS
+
+ Upcasting = convert child class to parent class. Access only to parent class methods
+ down casting = convert parent class to child class. Access to child class specific methods.
+
+
+ // Note = Object class har class ka parent hota hai to hame kise bhi class ko upcasting kar sakte hai Object class me.
+ ex = Object object = new Child();
+      Object object1 = new Parent();

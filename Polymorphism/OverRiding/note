@@ -1,0 +1,8 @@
+Method overriding occurs when a child class define their own implementation of method  or change the behaviour of method and that method already defined in parent class then we use method overriding.
+
+Syntax:- @override <--- This is optional we use it for symbol purpose
+        // method implement by child
+
+// jiska object pass hoga uska hhe method call hoga.
+
+It is run time polymorphism.

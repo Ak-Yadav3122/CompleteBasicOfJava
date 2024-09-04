@@ -1,0 +1,2 @@
+The object classs are the parent class of all the classes in Java. If we not define the parent of class then by default object class are the parent of that class.
+It provide default methods i.e; getclass(),hashCode(),wait(),toString(),clone(),equals(),finalize(),notify(),notifyall()
