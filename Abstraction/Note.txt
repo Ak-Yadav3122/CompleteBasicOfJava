@@ -14,6 +14,5 @@ ex:  public abstract void makeSound(); <---- only this defined by parent class
       public void makeSound() {
       // block of make sound
       }
-      }
 
       NOTE = Sub classes or child class must implement all abstract methods of an abstract class.
