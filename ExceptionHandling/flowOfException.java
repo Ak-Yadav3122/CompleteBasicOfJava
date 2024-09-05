@@ -18,7 +18,7 @@ public class flowOfException {
     private static void d(){
 
         Scanner input = new Scanner(System.in);
-
+       
         System.out.println("Welcome to Calculator World...");
 
         System.out.print("Please enter your first number:");
@@ -26,7 +26,8 @@ public class flowOfException {
 
         System.out.print("Please enter your second number:");
         int b = input.nextInt();
-
+        
+        input.close();
         try {
             int division = a / b;
             System.out.println("Your division of two number are: " + division);
@@ -38,6 +39,8 @@ public class flowOfException {
         finally {
             System.out.println("Completed");
         }
+        
     }
+    
 }
 

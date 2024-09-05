@@ -2,8 +2,6 @@ package Abstraction;
 
 public class Car extends Vehicle{
 
-    private int noOfDoors;
-
     public Car() {
         super(4); //super keyword are used to call the parent constructor.
     }
