@@ -1,0 +1,28 @@
+FileWriter : =
+
+FileWriter is used for writting strnes of characters to files.
+
+We can construct it into two types
+1. FileWriter(String FileName):creates the file writer object by given the name of the file.
+2.FileWriter(File file): creates a filewriter object by given a file objects.
+
+common method
+
+write(int c):writes a single character
+write(char[] c):writes an array of character.
+write(String str): writes a srings
+flush():Flushes the stream,ensuring all data is wriiten out. and it is used to push the data int the file.
+close():Closes the stream,releasing any associated system resources.
+
+
+FileReader: =
+
+File reader class is used for reading data from the files.
+
+we can construct it into two parts:
+1. FileReader(String filename): creates a FileReader object to read from a file with the specified name.
+2. FileReader(File file): creates a FileReader object to read from the specified file object.
+
+Common methods:
+read() : read a single character and return it as an interger. It return-1, if the end of the stream is reached.
+read(char[] cha): Reads characters into an array and return the number of characters read.

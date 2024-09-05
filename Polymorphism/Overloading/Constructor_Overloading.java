@@ -24,6 +24,6 @@ public class Constructor_Overloading {
 
         Constructor_Overloading sumConstructor = new Constructor_Overloading(2,5);
 
-        Constructor_Overloading stringConstructor = new Constructor_Overloading("Aichchhik", "Kumar");
+        Constructor_Overloading stringConstructor = new Constructor_Overloading("Aichchhik ", "Kumar");
     }
 }
